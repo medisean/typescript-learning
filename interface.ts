@@ -8,4 +8,4 @@ function greeter(person: Person) {
 }
 
 let user = { firstName: "Jame", lastName: "Cook" };
-document.body.textContent = greeter(user);
+console.log(greeter(user));
