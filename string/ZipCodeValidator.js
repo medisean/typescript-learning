@@ -39,3 +39,17 @@ var Color;
 var color = Color.Green;
 console.log(color);
 console.log(Color[2]);
+// dict
+console.log("**********");
+var dic = { "abc": 111 };
+console.log(dic["abcd"]); // undifined
+console.log(dic["abc"]); // 111
+if (dic["abc"]) {
+    console.log("existed");
+}
+else {
+    console.log("not existed");
+}
+dic["bbb"] = "989";
+delete dic["bbb"];
+console.log(dic["bbb"]);
