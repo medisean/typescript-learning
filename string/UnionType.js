@@ -12,3 +12,5 @@ var methods = {
 };
 var fn = methods.commandLine;
 console.log(fn());
+var c = { v1: "v1", v2: "v2" };
+console.log(c.v1, c.v2);

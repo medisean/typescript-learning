@@ -19,3 +19,19 @@ let methods: UnionType = {
 }
 var fn: any = methods.commandLine;
 console.log(fn());
+
+// multiple extends
+interface P1 {
+  v1: string;
+}
+
+interface P2 {
+  v2: string;
+}
+
+interface Child extends P1, P2 {
+
+}
+
+var c: Child = { v1: "v1", v2: "v2" };
+console.log(c.v1, c.v2);
